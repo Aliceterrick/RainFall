@@ -2,7 +2,7 @@
 
 This time, the binary doesn't call gets(), but fgets() which is protected against overflow since it takes an argument that limits the size of the input.
 
-![ghidra](level3.png)
+![ghidra](lvl3.png)
 
 But just after, it calls printf() which as all format string functions allows us to do a lot of things.
 

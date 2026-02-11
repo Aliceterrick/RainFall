@@ -2,7 +2,7 @@
 
 this level is pretty similar to the last one.
 
-![ghidra](level4.png)
+![ghidra](lvl4.png)
 
 as we can see, the binary call fgets() and call p which is a wrapper for printf().
 
