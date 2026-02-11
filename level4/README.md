@@ -8,7 +8,7 @@ as we can see, the binary call fgets() and call p which is a wrapper for printf(
 
 after that we have a if statement checking if m is equals to 16,930,116. If so, the binary will cat the pass.
 
-so as in the last level we need to write in m a value. The difference there is that it will not possible to write so many chars within the buffer. But with the format specifier %Xd we can bypass this problem. 
+so as in the last level we need to write in m a value. The difference there is that it will not possible to write so many chars within the buffer. But with the format specifier %[nbr]d we can bypass this problem. 
 
 the last unknown is the value of the positional specifier that allows us to write/read at the beginning of the fstring.
 
